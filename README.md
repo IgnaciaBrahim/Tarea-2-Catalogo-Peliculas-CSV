@@ -9,7 +9,7 @@ Dado que el sistema está diseñado para ser accesible y fácil de probar, recom
 1. Ingresa a [Replit](https://repl.it/)
 2. Inicia sesión, o crea una cuenta si es que no tienes.
 3. Una vez en tu página principal, selecciona "New Repl" y elige "Import from GitHub".
-4. Pega la URL del repositorio: [https://github.com/username/sistema-gestion-pacientes.git.](https://github.com/IgnaciaBrahim/Gestion-Hospitalaria-Tarea-1.git)
+4. Pega la URL del repositorio: [https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV](https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV)
 5. Replit clonará el repositorio y preparará un entorno de ejecución.
 6. Presiona el botón "Run" para compilar y ejecutar el código. 
 
@@ -40,6 +40,8 @@ En el programa podrás encontrar un menú con las siguientes funcionalidades:
 
 `7) Buscar por década y género: ` Se le pide al usuario que ingrese el género que deben tener las películas que busca. Si encuentra ese género en el archivo, se le pide que ingrese la década a la que deben pertenecer esas películas. Si es que no es encuentra, se emite un aviso. De otra forma, muestra las películas que comparten el género y década especificados por el usuario.
 
+`8) Salir: ` Al seleccionar opción 8, el programa deja de correr y se pierden los datos de las películas cargadas.
+
 ### Problemas conocidos:
 El problema es que siempre debe estar cargado el archivo en replit "Top1500" para la correcta carga de las películas y las demás funcionalidades del programa. Si el archivo no se puede cargar o no es el correcto, no se asegura que funcione. 
 
@@ -55,40 +57,74 @@ También, si en lugar de números se ingresan nombres o viceversa, puede que alg
 ## Ejemplo de uso e interacción:
 Para poder interactuar con el programa, deberás apretar el botón "Run" y luego ir al apartado "Console" para poder ingresar datos:
 
-![Captura de pantalla 2024-04-21 180426](https://github.com/IgnaciaBrahim/Gestion-Hospitalaria-Tarea-1/assets/137849174/6624cf3e-8f0e-49f3-b82a-76ad20cb9482)
 
-`1) Registrar paciente: `
 
-![Captura de pantalla 2024-04-21 180053](https://github.com/IgnaciaBrahim/Gestion-Hospitalaria-Tarea-1/assets/137849174/88ddd2fd-a17f-4957-bb01-78ebdfe9e843)
+`1) Cargar Película: `
 
-Se ingresa a la paciente "Ana", paciente que acaba de ingresar al hospital. Su prioridad se asigna automáticamente a baja.
+![Captura de pantalla 2024-05-05 163927](https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV/assets/137849174/3986b5b5-0e43-4dd0-87a9-26badcad8d0d)
 
-`2) Asignar prioridad: `
 
-![Captura de pantalla 2024-04-21 180120](https://github.com/IgnaciaBrahim/Gestion-Hospitalaria-Tarea-1/assets/137849174/23caaf7e-5de8-4288-844b-197f4c445d00)
+![Captura de pantalla 2024-05-05 164048](https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV/assets/137849174/8fb488d5-d9c8-4b9e-9697-94a26d4974b7)
 
-A la misma paciente, Ana, se le reasigna a la prioridad "ALTO", ya que su caso era grave. Así, se asegura que la atenderán pronto.
 
-`3) Mostrar la lista de espera: `
+Si seleccionas cargar películas, puedes dedicir si quieres ver sus id/título. Se implementó así ya que son 1500 películas.
 
-![Captura de pantalla 2024-04-21 180151](https://github.com/IgnaciaBrahim/Gestion-Hospitalaria-Tarea-1/assets/137849174/4a12db5c-8c93-4e1d-8c92-3440bcdd379c)
+`2) Buscar por id: `
 
-Se muestra la lista de espera, en la que por el momento solo se encuentra la paciente Ana.
 
-`5) Mostrar pacientes por prioridad: `
+![Captura de pantalla 2024-05-05 165149](https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV/assets/137849174/3dd78513-9b05-4084-a97e-949bea058f29)
 
-Si seleccionamos la prioridad "ALTO", podremos ver que Ana se encuentra en esa prioridad.
 
-![Captura de pantalla 2024-04-21 180246](https://github.com/IgnaciaBrahim/Gestion-Hospitalaria-Tarea-1/assets/137849174/4a5f0d2d-3256-48c8-9c0a-b688f7f0743a)
+Si ingresas un ID válido, mostrará la película que le corresponde. Intenta mirar el archivo CSV y buscar un id, ya que es difícil memorizarlo.
 
-`4) Atender al siguiente paciente: `
+`3) Buscar por director: `
 
-Se visualiza la lista de espera del hospital, en donde Ana es la única paciente y está primero en la lista. Al atenderla, se elimina de la lista de pacientes.
 
-![Captura de pantalla 2024-04-21 180307](https://github.com/IgnaciaBrahim/Gestion-Hospitalaria-Tarea-1/assets/137849174/5798b5b6-5775-4c3d-b8b5-c4a009019ab9)
+![Captura de pantalla 2024-05-05 165234](https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV/assets/137849174/eb5bea89-3a3a-4f65-944d-3c66da4e881b)
 
-`6) Salir: `
 
-![Captura de pantalla 2024-04-21 180321](https://github.com/IgnaciaBrahim/Gestion-Hospitalaria-Tarea-1/assets/137849174/8417d4c4-a1fe-42e2-b49a-c1efa6d4bf8d)
+Si ingresas por ejemplo "Quentin Tarantino", mostrará las películas que haya dirigido él que se encuentren en el archivo. Si no se encuentra el director o lo escribiste mal, te indicará que no se encuentra en la base de datos.
 
-Para salir del sistema, se selecciona la opción 6. No se podrá volver a acceder a los datos que se habían ingresado antes.
+`4) Buscar por género: `
+
+
+![Captura de pantalla 2024-05-05 165311](https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV/assets/137849174/d455e125-1c87-4692-8600-1fe7694a9908)
+
+
+Si ingresas por ejemplo "Animation", mostrará las películas que pertenezcan a ese género. Si no se encuentra  en los datos o lo escribiste mal, te indicará que no se encuentra en la base de datos.
+
+
+`5) Buscar por década: `
+
+
+![Captura de pantalla 2024-05-05 165335](https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV/assets/137849174/20e27da0-4ff7-4d39-9b92-8f8619839d5b)
+
+
+Si ingresas por ejemplo "2010", mostrará las películas que pertenezcan a esa década. Si no se encuentra en los datos o la escribiste mal, te indicará que no se encuentra en la base de datos. No intentes ingresar "20" o "10", ya que hay películas del 1900 y del 2000, por lo que solo permite que ingreses "1970", "2010".
+
+
+`6) Buscar por rango de calificaciones: `
+
+
+![Captura de pantalla 2024-05-05 165426](https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV/assets/137849174/8b23d06e-b73a-4422-b7d5-c12e2c86feb3)
+
+
+Si ingresas por ejemplo "4.1", y "5.6", mostrará todas las películas que estén calificadas dentro de ese rango. Si no se encuentran películas o escribirste un rango inválido, te indicará que no hay películas que estén dentro de esas calificaciones.
+
+`7) Buscar por década y género: `
+
+
+![Captura de pantalla 2024-05-05 165447](https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV/assets/137849174/d3cffd17-2aa5-45d5-8320-38dcd9ffd5c8)
+
+
+Si ingresas por ejemplo "Crime" y luego "2010", mostrará todas las películas que compartan ese género y década. Emitirá avisos en caso de no encontrar alguno de los requisitos.
+
+`8) Salir: ` 
+
+
+![Captura de pantalla 2024-05-05 165513](https://github.com/IgnaciaBrahim/Tarea-2-Catalogo-Peliculas-CSV/assets/137849174/4d601fb3-31e0-43ab-b6d6-795554065ec1)
+
+
+Al seleccionar opción 8, el programa deja de correr y se perderán los datos de las películas. Para usarlo de nuevo, deberás seleccionar siempre la opción 1 antes de comenzar a ocupar el programa.
+
+
