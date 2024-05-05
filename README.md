@@ -69,6 +69,8 @@ Para poder interactuar con el programa, deberás apretar el botón "Run" y luego
 
 Si seleccionas cargar películas, puedes dedicir si quieres ver sus id/título. Se implementó así ya que son 1500 películas.
 
+
+
 `2) Buscar por id: `
 
 
@@ -76,6 +78,8 @@ Si seleccionas cargar películas, puedes dedicir si quieres ver sus id/título. 
 
 
 Si ingresas un ID válido, mostrará la película que le corresponde. Intenta mirar el archivo CSV y buscar un id, ya que es difícil memorizarlo.
+
+
 
 `3) Buscar por director: `
 
@@ -85,6 +89,8 @@ Si ingresas un ID válido, mostrará la película que le corresponde. Intenta mi
 
 Si ingresas por ejemplo "Quentin Tarantino", mostrará las películas que haya dirigido él que se encuentren en el archivo. Si no se encuentra el director o lo escribiste mal, te indicará que no se encuentra en la base de datos.
 
+
+
 `4) Buscar por género: `
 
 
@@ -92,6 +98,7 @@ Si ingresas por ejemplo "Quentin Tarantino", mostrará las películas que haya d
 
 
 Si ingresas por ejemplo "Animation", mostrará las películas que pertenezcan a ese género. Si no se encuentra  en los datos o lo escribiste mal, te indicará que no se encuentra en la base de datos.
+
 
 
 `5) Buscar por década: `
@@ -103,6 +110,7 @@ Si ingresas por ejemplo "Animation", mostrará las películas que pertenezcan a 
 Si ingresas por ejemplo "2010", mostrará las películas que pertenezcan a esa década. Si no se encuentra en los datos o la escribiste mal, te indicará que no se encuentra en la base de datos. No intentes ingresar "20" o "10", ya que hay películas del 1900 y del 2000, por lo que solo permite que ingreses "1970", "2010".
 
 
+
 `6) Buscar por rango de calificaciones: `
 
 
@@ -111,6 +119,8 @@ Si ingresas por ejemplo "2010", mostrará las películas que pertenezcan a esa d
 
 Si ingresas por ejemplo "4.1", y "5.6", mostrará todas las películas que estén calificadas dentro de ese rango. Si no se encuentran películas o escribirste un rango inválido, te indicará que no hay películas que estén dentro de esas calificaciones.
 
+
+
 `7) Buscar por década y género: `
 
 
@@ -118,6 +128,8 @@ Si ingresas por ejemplo "4.1", y "5.6", mostrará todas las películas que esté
 
 
 Si ingresas por ejemplo "Crime" y luego "2010", mostrará todas las películas que compartan ese género y década. Emitirá avisos en caso de no encontrar alguno de los requisitos.
+
+
 
 `8) Salir: ` 
 
